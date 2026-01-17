@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './App.css';
+import '../App.css';
 
 function ListApp() {
   const [input, setInput] = useState(""); //to store text which is typed by user in input field

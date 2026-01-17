@@ -1,5 +1,5 @@
 import React from "react";
-import ListApp from "./Todolist"
+import ListApp from "./components/Todolist";
 import './App.css';
 
 function App() {

@@ -1,10 +1,15 @@
 import React from "react";
-import TodoApp from "./TodoApp";
+import ListApp from "./Todolist"
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <TodoApp />
+    <div className="main">
+      <h1>Assignment 2</h1>
+      <div className="todo">
+        <h2>Todo List</h2>
+        <ListApp />
+      </div>
     </div>
   );
 }

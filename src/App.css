@@ -1,76 +1,77 @@
 body {
-  background: #f0f2f5;
-  font-family: Arial, sans-serif;
+    font-family: "domine";
 }
 
-.container {
-  width: 380px;
-  padding: 25px;
-  margin: 40px auto;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+.main {
+    background-color:#f1f1f1;
+    width: 400px;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 50px;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+.main h1{
+    text-align: center;
+    color: black;
 }
 
-.input-section {
-  display: flex;
-  gap: 10px;
+.todo{
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-input {
-  flex: 1;
-  padding: 10px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 15px;
+.todo h2{
+    text-align: center;
+    color: #fff;
 }
 
-input:focus {
-  border-color: #0066ff;
-  border:1px;
+.box {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    
 }
 
-button {
-  padding: 10px 16px;
-  background: #0066ff;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.3s;
+.box input[type="text"], .box input:not([type="checkbox"]) {
+    padding: 12px;
+    border:none;
+    border-radius: 5px 0px 0px 5px;
+    width: 70%;
+    outline: none;
 }
 
-button:hover {
-  background: #004bcc;
+.box button{
+    background-color: black;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 0px 5px 5px 0px;
+    border:none;
+    color: white;
 }
 
-.todo-list {
-  margin-top: 20px;
+.box button:hover{
+    background-color: #1f2937;
 }
 
-.todo-item {
-  align-items: center;
-  background: #fafafa;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  border-left: 4px solid #0066ff;
+.display {
+    padding-left: 10px;
+    margin-top: 20px;
+    
+}
+.display li {
+    list-style-position: inside;
+    text-align: left;
+    gap: 10px;
+    padding: 8px 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
 }
 
-.todo-item.completed {
-  text-decoration: line-through;
-  opacity: 0.6;
-  border-left-color: #4caf50;
-}
-
-.todo-item label {
-  margin-left: 10px;
-  font-size: 16px;
+.display input[type="checkbox"] {
+    margin-left: 5px; 
+    cursor: pointer;
+    accent-color: #4caf50;
 }

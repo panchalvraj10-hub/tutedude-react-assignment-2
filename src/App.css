@@ -1,36 +1,35 @@
 body {
     font-family: "domine";
+    background-color: #F7FBF9;
 }
 
 .main {
-    background-color:#f1f1f1;
+    background-color:#ffffff;
     width: 400px;
     border-radius: 10px;
-    margin: 50px auto;
-    padding: 50px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #00000021;
 }
 
 .main h1{
-    text-align: center;
-    color: black;
+    text-align: left;
+    color: #0F1720;
+    height: 20px;
+    margin-top: 0px;
+    font-size: 30px;
 }
 
-.todo{
-    background-color: red;
-    padding: 20px;
-    border-radius: 10px;
-}
 
-.todo h2{
-    text-align: center;
-    color: #fff;
+.main h2{
+    text-align: left;
+    color: #6B7280;
+    font-size: 20px;
 }
 
 .box {
     background-color: red;
-    padding: 20px;
-    text-align: center;
-    
+    text-align: left;
 }
 
 .box input[type="text"], .box input:not([type="checkbox"]) {

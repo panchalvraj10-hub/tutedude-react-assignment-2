@@ -12,65 +12,82 @@ body {
     border: 1px solid #00000021;
 }
 
-.main h1{
-    text-align: left;
+.main h1 {
+    text-align: center;
     color: #0F1720;
     height: 20px;
     margin-top: 0px;
+    padding-bottom: 50px;
     font-size: 30px;
 }
 
 
-.main h2{
+.main h2 {
     text-align: left;
-    color: #6B7280;
+    color: #000000;
     font-size: 20px;
 }
 
-.box {
-    background-color: red;
-    text-align: left;
+.textbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 8px 10px;
+    background: #ffffff;
 }
 
-.box input[type="text"], .box input:not([type="checkbox"]) {
-    padding: 12px;
-    border:none;
-    border-radius: 5px 0px 0px 5px;
-    width: 70%;
+.textbox input {
+    flex: 1;
+    border: none;
     outline: none;
+    font-size: 14px;
+    color: #000000;
 }
 
-.box button{
-    background-color: black;
-    cursor: pointer;
-    padding: 12px;
-    border-radius: 0px 5px 5px 0px;
-    border:none;
+.textbox input::placeholder {
+    color: #9ca3af;
+}
+
+.textbox button {
+    background-color: #10b981;
     color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-.box button:hover{
-    background-color: #1f2937;
+.textbox button:hover {
+    background-color: #000000;
 }
 
 .display {
-    padding-left: 10px;
     margin-top: 20px;
-    
-}
-.display li {
-    list-style-position: inside;
-    text-align: left;
-    gap: 10px;
-    padding: 8px 8px;
-    margin-bottom: 8px;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
+    padding-left: 20px;
 }
 
-.display input[type="checkbox"] {
-    margin-left: 5px; 
+.display li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-bottom: 12px;
+    background: #ffffff;
+    padding: 12px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.display li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #10b981;
     cursor: pointer;
-    accent-color: #4caf50;
+    margin-right: 12px;
+}
+
+.task-text {
+    font-size: 18px;
+    color: #000000;
 }

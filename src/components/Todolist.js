@@ -18,14 +18,16 @@ function ListApp() {
   };
 
   return (
-    <div className="box">
-      <input
+    <div>
+      <div className="textbox">
+        <input
         value={input} // get input from user
         onChange={(e) => setInput(e.target.value)} // to update input status when user write something
         placeholder="Enter Task" 
       />
 
       <button onClick={addList}>Add</button> {/* to add the task to list entered by user*/}
+      </div>
 
       <ul className="display">
         {list.map((item, index) => ( //check all tasks one by one
@@ -39,7 +41,7 @@ function ListApp() {
                   )
                 )}
             />
-            {item} {/* to display task list */}
+            <span className="task-text">{item}</span> {/* to display task list */}
           </li>
         ))}
       </ul>
